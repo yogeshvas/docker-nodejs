@@ -1,4 +1,3 @@
-Here’s your enhanced Docker notes formatted as a **GitHub README.md** file:
 
 ````markdown
 # 🐳 Docker Cheat Sheet
@@ -109,12 +108,3 @@ your-project/
 
 ---
 
-## 📚 Resources
-
-* [Official Docker Documentation](https://docs.docker.com/)
-* [Docker Hub](https://hub.docker.com/)
-
-```
-
-You can save this content as your `README.md` in your GitHub repository. Let me know if you want to include visuals or a Docker diagram!
-```
