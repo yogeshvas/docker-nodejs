@@ -1,38 +1,27 @@
-Docker COmmands
+# 🐳 Docker Cheat Sheet
 
+A quick reference guide to essential Docker commands, port mapping, container management, and building custom Docker images.
 
+---
+
+## 📦 Basic Docker Commands
+
+```bash
+# Pull a Docker image
 docker pull ubuntu
+
+# Run a container from the image
 docker run ubuntu
-docker ps -> gives me all the running containers
-docker ps -a -> shows all the images that have run in past
-dokcer run -it ubuntu
-apt update
-apt install vim
 
+# Run a container with interactive terminal
+docker run -it ubuntu
 
+# List all running containers
+docker ps
 
-docker pull alpine
-docker run -it alpine
-apk update
-apk add vim
+# List all containers (running and stopped)
+docker ps -a
 
-
-PORT MAPPING
-docker run -it -p 7990:80 ngnix   (externalPort:InternalPost)
-
-
-docker logs CONTAINER_ID
-docker exec -it CONTAINER_ID bash
-
-
-Creating your own docker file
-1. Create a filename name Dockerfile
-2. Basic Commands are as follows
-FROM python
-ADD app.py /tree/app.py
-CMD ["python", "/tree/app.py"]
-3. docker build -t python-hello-world .
-
-
-Removing docker Imgaes
-docker image prune
+Inside the Ubuntu Container
+apt update         # Update package lists
+apt install vim    # Install Vim editor
